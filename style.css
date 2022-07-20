@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(216, 12%, 8%);
+}
+
+.component {
+  background: hsl(213, 19%, 18%);
+  width: 450px;
+  padding: 3.5em;
+  border-radius: 3em;
+}
+
+.default {
+  display: block;
+}
+
+.default .star {
+  background: rgb(57, 59, 68);
+  border-radius: 50%;
+  padding: 1.8em;
+}
+
+.default h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 1em;
+}
+
+.default p {
+  font-size: 1.7rem;
+  margin-top: 0.8em;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.6;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.7em;
+}
+
+.ratings .rating {
+  padding: 1.8em;
+  font-size: 1.6rem;
+  background: hsl(214, 15%, 22%);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+}
+
+.ratings .rating:hover {
+  background: hsl(217, 12%, 63%);
+  color: #fff;
+}
+
+.ratings .rating.active {
+  background: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  background: hsl(25, 97%, 53%);
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  /* font-weight: 700; */
+  margin-top: 2.2em;
+  border: none;
+  border-radius: 2em;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+.thank-you span {
+  color: #fff;
+}
+.thank-you .selected {
+  background: hsl(213, 18%, 22%);
+  color: hsl(25, 97%, 53%);
+  margin: 2.5em 0;
+  font-size: 1.4rem;
+  padding: 0.6em 1.7em;
+  border-radius: 1em;
+}
+.thank-you h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  /* margin-top: 1.5em; */
+}
+.thank-you p {
+  font-size: 1.7rem;
+  margin-top: 0.8em;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 500px) {
+  .component {
+    margin: 0 3em;
+    padding: 2em;
+  }
+
+  .ratings .rating {
+    font-size: 1.3rem;
+    background: hsl(214, 15%, 22%);
+    height: 15px;
+    width: 15px;
+  }
+}
